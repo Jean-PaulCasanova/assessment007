@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyReads</title>
-  <link rel="icon" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyReads</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>MyReads</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">My Books</a></li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Community</a></li>
-      </ul>
-      <form class="search-bar">
-        <input type="text" placeholder="search for a book title">
-        <button type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <h1>MyReads</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Books</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="search for a book title">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
 
-  <!-- Main Content -->
-  <main>
-    <h2>Non-Fiction</h2>
-    
-    <!-- Book #1 -->
-    <section class="book">
-      <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-1.png" alt="The Light We Carry Book Cover">
-      <div class="book-info">
-        <h3>The Light We Carry</h3>
-        <p><strong>Author:</strong> Michelle Obama</p>
-        <p>When they go low, you write another book. In an inspiring follow-up to her bestselling memoir *Becoming*, the former First Lady of the United States shares practical wisdom and powerful strategies for staying hopeful and balanced through difficult times.</p>
-        <button>Add to Library</button>
-      </div>
-    </section>
+    <!-- Main Content Section -->
+    <main>
+        <h2>Non-Fiction</h2>
+        <div class="book-container">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-1.png" alt="The Light We Carry">
+                <div class="book-info">
+                    <h3>The Light We Carry</h3>
+                    <p class="author">by Michelle Obama</p>
+                    <p class="description">
+                        When they go low, you write another book. In an inspiring follow-up to her 
+                        bestselling memoir Becoming, the former First Lady of the United States shares 
+                        practical wisdom and powerful strategies for staying hopeful and balanced through 
+                        difficult times.
+                    </p>
+                    <button>Add to Library</button>
+                </div>
+            </div>
 
-    <!-- Book #2 -->
-    <section class="book">
-      <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-2.png" alt="Visual Thinking Book Cover">
-      <div class="book-info">
-        <h3>Visual Thinking</h3>
-        <p><strong>Author:</strong> Temple Grandin</p>
-        <p>Twenty-five years ago, author and educator Temple Grandin changed mainstream understanding of autism with her memoir, *Thinking in Pictures*. Her new book expands on the theme, celebrating visual/spatial cognition, intuitive design, and the critical importance of those who think differently. In fact, Grandin argues persuasively that today's problems require neurodiverse thinking.</p>
-        <button>Add to Library</button>
-      </div>
-    </section>
-  </main>
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-07/MyReads/sample-book-photo-2.png" alt="Visual Thinking">
+                <div class="book-info">
+                    <h3>Visual Thinking</h3>
+                    <p class="author">by Temple Grandin</p>
+                    <p class="description">
+                        Twenty-five years ago, author and educator Temple Grandin changed mainstream 
+                        understanding of autism with her memoir, Thinking in Pictures. Her new book 
+                        expands on the theme, celebrating visual/spatial cognition, intuitive design, 
+                        and the critical importance of those who think differently. In fact, Grandin 
+                        argues persuasively that today's problems require neurodiverse thinking.
+                    </p>
+                    <button>Add to Library</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <!-- Footer Section -->
-  <footer>
-    <h4>COMPANY</h4>
-    <ul>
-      <li><a href="#">About Us</a></li>
-    </ul>
-  </footer>
+    <!-- Footer Section -->
+    <footer>
+        <div class="company">
+            <h3>COMPANY</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="connect">
+            <h3>CONNECT</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i></li>
+                <li><i class="fas fa-mobile-alt"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+                <li><i class="fas fa-rss"></i></li>
+                <li><i class="fas fa-walking"></i></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
