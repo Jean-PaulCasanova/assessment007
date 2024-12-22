@@ -7,6 +7,7 @@ body {
 }
 
 /* Header Section */
+/* Header Section Update */
 header {
     background-color: #ffffff;
     padding: 20px;
@@ -15,6 +16,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px; /* Adds spacing between elements */
 }
 
 header h1 {
@@ -23,20 +25,14 @@ header h1 {
     margin: 0;
 }
 
-nav {
-    margin-top: 10px;
-}
-
+/* Navigation Update */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Ensures no extra spacing */
     display: flex;
     gap: 20px;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0;
 }
 
 nav ul li a {
